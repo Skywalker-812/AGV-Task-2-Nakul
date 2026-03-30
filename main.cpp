@@ -8,6 +8,17 @@
 #include <vector>
 using namespace std;
 
+/* Compiling code
+g++ main.cpp -O3 -std=c++17 -o rendered \
+  -I/opt/homebrew/include \
+  -L/opt/homebrew/lib \
+  -lraylib \
+  -framework OpenGL -framework Cocoa -framework IOKit
+./rendered
+  */
+
+
+
 // Global Variables
 bool initialized = false;
 bool all_done = false;
