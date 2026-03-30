@@ -1,8 +1,6 @@
 # AGV-Task-2-Nakul
 This is my GITHUB repo that has my work on task of AGV to build a simulator that avoids dynamic obstacles.
 
-# AGV Task 2
-
 # Dynamic Obstacle Avoidance
 
 ### Components:
@@ -25,6 +23,8 @@ This is my GITHUB repo that has my work on task of AGV to build a simulator that
 
 ### 4.  braking in advance when danger is seen or slowing down
 
+
+
 # 1. Waypoint Generation (Subtask 1 Core)
 
 ### Implemented Approach: Grid Sampling + Local Triangulation (NC3 logic)
@@ -45,7 +45,6 @@ contains(curmap[k],point(wx,wy))
 
 ### Step 2: Local triangle formation (NC3-inspired)
 
-![Screenshot 2026-03-30 at 9.43.23 PM.png](attachment:4df6890b-c5b3-45d2-84ee-e37b55a24ce9:Screenshot_2026-03-30_at_9.43.23_PM.png)
 
 For each free point:
 
@@ -125,7 +124,6 @@ di=sqrt{(x_i - x)^2 + (y_i - y)^2}
 
 ## EMA Filtering (Noise Handling) (Used Finance stock logic of moving averages  to decide weights on the rays lengths)
 
-![Screenshot 2026-03-30 at 9.53.35 PM.png](attachment:8432e97b-e9e0-434a-bf68-66e7116dfe7d:Screenshot_2026-03-30_at_9.53.35_PM.png)
 
 alpha =0.2
 
@@ -194,8 +192,6 @@ steer=(1−danger)⋅goal+danger⋅avoid
 ---
 
 ## Braking in Advanced after seeing danger
-
-![Screenshot 2026-03-30 at 10.06.43 PM.png](attachment:9c121e1e-404d-43bd-8ffa-ac28f8404737:Screenshot_2026-03-30_at_10.06.43_PM.png)
 
 danger_rate=danger−prev_danger
 
